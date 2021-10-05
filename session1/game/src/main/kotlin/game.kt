@@ -7,20 +7,9 @@ fun main() {
 
     println(randomItem)
 
-    for (item in gameItems){
+    val userChoice = readLine()
 
-
-        if(item == randomItem){
-
-        }
-        if (item == randomItem){
-
-        }
-        if (item == randomItem){
-
-        }
-
-    }
+    println("You have entered this: $userChoice")
 
 
     }
