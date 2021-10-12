@@ -23,8 +23,8 @@ fun challengeOne() {
 fun challengeTwo() {
         println("Guess the dice number");
         val diceNumbers =  intArrayOf(1, 2, 3,4,5,6).random()
-
         val lowNumber = intArrayOf(1,2,3).random()
+        val highNumber = intArrayOf(4,5,6).random()
 
 
 }
