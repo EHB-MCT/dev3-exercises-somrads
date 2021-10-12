@@ -10,9 +10,20 @@ fun challengeOne(){
 
     if (playerAnwser != null) {
         if (playerAnwser.contains(correctAnswer)){
-            println("You are correct, Monkey.D.Luffy is the name")
+            challengeTwo()
         } else {
             println("Too bad " + playerAnwser + " is the wrong name " )
+        }
+    }
+
+    fun challengeTwo(){
+        val userGuess = readLine().toString();
+        val diceResult = (1..6).random();
+
+        if (diceResult >=4){
+            winner()
+        } else {
+            gameOver()
         }
     }
 
