@@ -4,11 +4,11 @@ class Duolingo(
 )
 {
     var words = mutableListOf<Word>(
-        Word("jardin", "tuin", "frans"),
-        Word("pool", "zwembad", "engels"),
-        Word("ordinateur", "computer", "frans"),
-        Word("tree", "boom", "engels"),
-        Word("eau", "water", "frans"),
+        FrenchWord("jardin", "tuin"),
+        EnglishWord("pool", "zwembad"),
+        FrenchWord("ordinateur", "computer"),
+        EnglishWord("tree", "boom"),
+        FrenchWord("eau", "water"),
         )
 
     init{
@@ -21,7 +21,7 @@ class Duolingo(
 
         val currentWords = words.shuffled().take(roundSize).toMutableList()
         println(currentWords.count())
- 
+
         while (currentWords.isNotEmpty()){
             val selectedWords = currentWords.random()
             println("what's the translation of ${selectedWords.original}")
